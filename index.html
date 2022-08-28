@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/61b248fb6c.js" crossorigin="anonymous"></script>
-<!--     <link rel="stylesheet" href="css/scrollbar.css"> -->
+    <link rel="stylesheet" href="css/scrollbar.css">
     
     <title>Guilherme Casagrande</title>
 </head>
@@ -31,17 +31,18 @@
     <article id="skills" class="skills">
         <h2 class="title">Skills</h2>
         <section class="cont1">
-            <div><i class="fa-brands fa-html5"></i></div>
-            <div><i class="fa-brands fa-css3-alt"></i></div>
-            <div><i class="fa-brands fa-square-js"></i></div>
-            <div><i class="fa-brands fa-php"></i></div>
-            <div><i class="fa-brands fa-git-alt"></i></div>
-            <div><i class="fa-brands fa-bootstrap"></i></div>
+            <div onmouseenter="muda(1)" onmouseleave="muda(7)"><i class="fa-brands fa-html5"></i></div>
+            <div onmouseenter="muda(2)" onmouseleave="muda(7)"><i class="fa-brands fa-css3-alt"></i></div>
+            <div onmouseenter="muda(3)" onmouseleave="muda(7)"><i class="fa-brands fa-square-js"></i></div>
+            <div onmouseenter="muda(4)" onmouseleave="muda(7)"><i class="fa-brands fa-php"></i></div>
+            <div onmouseenter="muda(5)" onmouseleave="muda(7)"><i class="fa-brands fa-git-alt"></i></div>
+            <div onmouseenter="muda(6)" onmouseleave="muda(7)"><i class="fa-brands fa-bootstrap"></i></div>
         </section>
         <section class="cont2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptatum, sunt accusantium atque debitis dolorum aliquam minima explicabo suscipit iure odit reprehenderit maxime dicta magni in dolore, nemo possimus quisquam?
-            Dolor dicta consequuntur deserunt veniam necessitatibus, error sapiente, distinctio itaque architecto quae animi laboriosam quibusdam optio officia ex accusantium placeat alias! Labore error sapiente voluptatibus similique asperiores eveniet laboriosam ad.</p>
+            <p id="skilltext">Hover over the icons for more information</p>
         </section>
     </article>
+
+    <script src="js/script.js"></script>
 </body>
 </html> 
