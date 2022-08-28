@@ -15,6 +15,9 @@ body, html{
     color: white;
     scroll-behavior: smooth;
 }
+.hidden{
+    display: none;
+}
 nav{
     width: 100%;
     margin: 0;
@@ -99,10 +102,24 @@ article{
 }
 .cont2{
     box-sizing: border-box;
+    margin: 3%;
+    margin-top: 0;
+    padding-top: 0;
     /* background-color: aqua; */
     grid-area: cont2;
     text-align: left;
     padding: 3%;
     font-size: 1.6rem;
     margin-top: 12;
+    display: grid;
+    grid-template-rows: 1fr 0fr 0.45fr 1fr;
+}
+.progress{
+    margin-bottom: 10%;
+    background-color: #5F210C;
+}
+.prog-bar{
+    width: 0%;
+    height: 100%;
+    background-color: #000000;
 }
