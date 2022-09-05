@@ -7,6 +7,9 @@
     margin: 0;
 
 }
+.row{
+    margin: 0 !important;
+}
 body, html{
     margin: 0;
     padding: 0;
@@ -31,11 +34,13 @@ nav{
 nav a{
     text-decoration: none;
     color: white;
+    background-color: transparent;
     border-bottom: 2px transparent solid;
     text-shadow: 1.5px 1px black;
 }
 nav a:hover{
     border-bottom: 2px white solid;
+    background-color: transparent !important;
 }
 .navbar{
     display: flex;
@@ -69,57 +74,4 @@ header .home{
 }
 article{
     height: 100vh;
-}
-.skills{
-    background-color: #101E21;
-    display: grid;
-    grid-template-rows: 0.2fr 1.5fr;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-areas: 'title title' 'cont1 cont2';
-    
-}
-.title{
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 2.5%;
-    padding-top: 2%;
-    grid-area: title;
-}
-.cont1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-/*     grid-gap: 5%; */
-    grid-area: cont1;
-}
-.cont1 > div{
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 700%;
-    margin: 10%;
-    background-color: #5F210C;
-}
-.cont2{
-    box-sizing: border-box;
-    margin: 3%;
-    margin-top: 0;
-    padding-top: 0;
-    /* background-color: aqua; */
-    grid-area: cont2;
-    text-align: left;
-    padding: 3%;
-    font-size: 1.6rem;
-    margin-top: 12;
-    display: grid;
-    grid-template-rows: 1fr 0fr 0.45fr 1fr;
-}
-.progress{
-    margin-bottom: 10%;
-    background-color: #5F210C;
-}
-.prog-bar{
-    width: 0%;
-    height: 100%;
-    background-color: #000000;
 }
