@@ -62,10 +62,12 @@ header h1{
     font-style: normal;
     font-size: 4rem;
     font-weight: 700;
+    margin-bottom: 0 !important;
 }
 header p{
     font-size: 1.4rem;
     font-weight: 100;
+    margin-top: 0 !important;
     
 }
 header .home{

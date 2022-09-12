@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- It's hiding the scrollbar. -->
     <style>
     body::-webkit-scrollbar{
         width: 0px;
@@ -21,14 +22,13 @@
     <title>Guilherme Casagrande</title>
 </head>
 <body>
-    <div class="row">
+    <div class="row hide-on-small-only hide-on-med-only">
         <nav class="transparent z-depth-0">
             <div class="nav-wrapper navbar-fixed">
-
                 <div class="brand-logo center">
                     <ul id="tabs">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Competências</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#competencias">Competências</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Portfólio</a></li>
                         <li><a href="#">Contato</a></li>
@@ -37,7 +37,7 @@
             </div>
         </nav>
     </div>
-    <div class="row">
+    <div class="row" id="home">
         <article>
             <header class="valign-wrapper">
                 <div class="left-align">
@@ -47,7 +47,12 @@
             </header>
         </article>
     </div>
+    <div class="section" id="competencias">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+        M.AutoInit();
+    </script>
 </body>
 </html>
