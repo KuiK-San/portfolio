@@ -19,14 +19,16 @@
     </style>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Guilherme Casagrande</title>
 </head>
 <body>
-    <div class="row hide-on-small-only hide-on-med-only">
+    <div class="row ">
         <nav class="transparent z-depth-0">
             <div class="nav-wrapper navbar-fixed">
-                <div class="brand-logo center">
-                    <ul id="tabs">
+                <div class="brand-logo center ">
+                    <ul id="tabs" class="hide-on-med-and-down">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#competencias">Competências</a></li>
                         <li><a href="#">Sobre</a></li>
@@ -34,9 +36,17 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
         </nav>
     </div>
+    <ul class="sidenav black" id="mobile-demo">
+        <li><a class="white-text" href="#home">Home</a></li>
+        <li><a class="white-text" href="#competencias">Competências</a></li>
+        <li><a class="white-text" href="#">Sobre</a></li>
+        <li><a class="white-text" href="#">Portfólio</a></li>
+        <li><a class="white-text" href="#">Contato</a></li>
+    </ul>
     <div class="row" id="home">
         <article>
             <header class="valign-wrapper">
@@ -51,7 +61,7 @@
 
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    <script>
         M.AutoInit();
     </script>
 </body>
