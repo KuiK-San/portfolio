@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- It's hiding the scrollbar. -->
     <style>
-    body::-webkit-scrollbar{
+/*     body::-webkit-scrollbar{
         width: 0px;
     }
     body::-webkit-scrollbar-track{
@@ -15,7 +15,7 @@
     body::-webkit-scrollbar-thumb{
         background-color: #5F210C;
         border-radius: 12px;
-    }
+    } */
     </style>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -33,7 +33,7 @@
                         <li><a href="#competencias">Competências</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Portfólio</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -41,26 +41,64 @@
         </nav>
     </div>
     <ul class="sidenav black" id="mobile-demo">
-        <li><a class="white-text" href="#home">Home</a></li>
-        <li><a class="white-text" href="#competencias">Competências</a></li>
-        <li><a class="white-text" href="#">Sobre</a></li>
-        <li><a class="white-text" href="#">Portfólio</a></li>
-        <li><a class="white-text" href="#">Contato</a></li>
+        <li><a class="white-text waves-effect waves-light" href="#home">Home</a></li>
+        <li><a class="white-text waves-effect waves-light" href="#competencias">Competências</a></li>
+        <li><a class="white-text waves-effect waves-light" href="#">Sobre</a></li>
+        <li><a class="white-text waves-effect waves-light" href="#">Portfólio</a></li>
+        <li><a class="white-text waves-effect waves-light" href="#contato">Contato</a></li>
     </ul>
     <div class="row" id="home">
-        <article>
+        <div id="header">
             <header class="valign-wrapper">
                 <div class="left-align">
                     <h1>Guilherme Casagrande</h1>
                     <p>Web Developer</p>
                 </div>
             </header>
-        </article>
+        </div>
     </div>
-    <div class="section" id="competencias">
-
-    </div>
-
+    <article class="blue-grey darken-4" id="contato">
+        <div class="container " >
+            
+                <div class="row">
+                    <h1 class="center-align">Contato</h1>
+                </div>
+                <form action="email.php" method="post">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="nome" name="nome" type="text" class="white-text" required>
+                                    <label for="nome" class="">Nome</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" name="email" class="validate white-text" required>
+                                    <label for="email">E-mail Para Contato</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="assunto" type="text" name="assunto" class="white-text" required>
+                                    <label for="assunto">Assunto</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                  <textarea id="textarea2" name="mensagem" class="materialize-textarea white-text" data-length="120" required></textarea>
+                                  <label for="textarea2">Insira sua mensagem</label>
+                            </div>
+                            <div class="row">
+                                <button class="waves-effect waves-light btn-flat white-text" type="submit" name="action">Enviar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            
+        </div>
+    </article>
     <script>
         M.AutoInit();
     </script>

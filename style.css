@@ -13,7 +13,7 @@
 body, html{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-family: 'Montserrat', sans-serif;
     color: white;
     scroll-behavior: smooth;
@@ -74,6 +74,28 @@ header .home{
     text-align: left;
     margin-bottom: 0;
 }
+#header{
+    height: 100vh;
+}
 article{
     height: 100vh;
+    padding: 2%;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.input-field input:focus + label {
+    color: #586063 !important;
+}
+.input-field input:focus {
+    border-bottom: 1px solid #586063 !important;
+    box-shadow: 0 1px 0 0 #586063 !important; 
+}
+.input-field textarea:focus + label {
+    color: #586063 !important;
+}
+.input-field textarea:focus {
+    border-bottom: 1px solid #586063 !important;
+    box-shadow: 0 1px 0 0 #586063 !important; 
 }
