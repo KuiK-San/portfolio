@@ -36,8 +36,8 @@
                     <ul id="tabs" class="hide-on-med-and-down">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#formacao">Formação</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Portfólio</a></li>
+                        <li><a href="#desenvolvimento">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
@@ -48,8 +48,8 @@
     <ul class="sidenav black" id="mobile-demo">
         <li><a class="white-text waves-effect waves-light" href="#home">Home</a></li>
         <li><a class="white-text waves-effect waves-light" href="#formacao">Formação</a></li>
-        <li><a class="white-text waves-effect waves-light" href="#">Serviços</a></li>
-        <li><a class="white-text waves-effect waves-light" href="#">Portfólio</a></li>
+        <li><a class="white-text waves-effect waves-light" href="#desenvolvimento">Serviços</a></li>
+        <li><a class="white-text waves-effect waves-light" href="#portfolio">Portfólio</a></li>
         <li><a class="white-text waves-effect waves-light" href="#contato">Contato</a></li>
     </ul>
     <div class="row" id="home">
@@ -88,66 +88,110 @@
                 </div>
                 <div class="col l4 m4 center-align">
                     <div class="alinha">
-                        <div class="formimg valign-wrapper"><img class="" src="img/curso_em_video.png" alt=""></div>
+                        <div class="formimg valign-wrapper"><span>EM BREVE</span></div>
                         <div class="center-align">
-                            <h3>Curso em video</h3>
-                            <p>Curso Das linguagens JavaScript E HTML5 - CSS3</p>
+                            <h3>EM BREVE</h3>
+                            <p>A jornada Continua...</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </article>
-    <article class="contato" id="contato">
-        <div class="container" >
-            
-                <div class="row">
-                    <h2 class="center-align">Contato</h2>
-                </div>
-                <form action="email.php" method="post">
-                    <div class="row">
-                        <div class="col s12">
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input id="nome" name="nome" type="text" class="white-text" required>
-                                    <label for="nome" class="">Nome <span class="red-text">*</span></label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input id="telefone" name="telefone" type="text" class="white-text" required>
-                                    <label for="telefone" class="">Telefone <span class="red-text">*</span></label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <!-- mudar o type para email -->
-                                <div class="input-field col s12">
-                                    <input id="email" type="text" name="email" class="validate white-text" required>
-                                    <label for="email">E-mail Para Contato <span class="red-text">*</span> </label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="assunto" type="text" name="assunto" class="white-text" required>
-                                    <label for="assunto">Assunto <span class="red-text">*</span></label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                  <textarea id="textarea2" name="mensagem" class="materialize-textarea white-text" data-length="120" required></textarea>
-                                  <label for="textarea2">Insira sua mensagem <span class="red-text">*</span></label>
-                            </div>
-                            <div class="row">
-                                <button class="waves-effect waves-light btn-flat white-text col l12 s12 m12" type="submit" name="action">Enviar
-                                </button>
-                            </div>
+    <article class="desenvolvimento" id="desenvolvimento">
+        <div class="container">
+            <div class="row">
+                <h2 class="center-align">Desenvolvimento</h2>
+            </div>
+            <div class="row">
+                <div class="col l4 s12">
+                    <div class="conteudodev valign-wrapper">
+                        <div class="center-block">
+                            <img class="center-align" src="img/wireframe.png" alt="">
+                            <p class="center-align">Wireframe</p>
                         </div>
                     </div>
-                </form>
-            
+                </div>
+                <div class="col l4 s12">
+                    <div class="conteudodev valign-wrapper">
+                        <div class="center-block">
+                            <img class="center-align" src="img/teste-online.png" alt="">
+                            <p class="center-align">Landing Page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 s12">
+                    <div class="conteudodev valign-wrapper">
+                        <div class="center-block">
+                            <img class="center-align" src="img/website.png" alt="">
+                            <p class="center-align">Site Institucional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id="portfolio" class="port">
+        <div class="container">
+            <div class="row">
+                <h2 class="center-align">Portfólio</h2>
+            </div>
+            <div class="row">
+                <div class="teste col l4 offset-l4 s12">
+                    <a href="https://ladesign.rf.gd/" target="_blank"><img class="imgport" src="img/lades.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="contato" id="contato">
+        <div class="container" >
+            <div class="row">
+                <h2 class="center-align">Contato</h2>
+            </div>
+            <form action="email.php" method="post">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="nome" name="nome" type="text" class="white-text" required>
+                                <label for="nome" class="">Nome <span class="red-text">*</span></label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="telefone" name="telefone" type="text" class="white-text" required>
+                                <label for="telefone" class="">Telefone <span class="red-text">*</span></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" name="email" class="validate white-text" required>
+                                <label for="email">E-mail Para Contato <span class="red-text">*</span> </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="assunto" type="text" name="assunto" class="white-text" required>
+                                <label for="assunto">Assunto <span class="red-text">*</span></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea2" name="mensagem" class="materialize-textarea white-text" data-length="120" required></textarea>
+                                <label for="textarea2">Insira sua mensagem <span class="red-text">*</span></label>
+                        </div>
+                        <div class="row">
+                            <button class="waves-effect waves-light btn-flat white-text col l12 s12 m12" type="submit" name="action">Enviar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </article>
     <footer>
-        <p class="center-align">Todos os direitos reservados a Guilherme Casagrande &copy; - 2022</p>
+        <p class="center-align">Todos os direitos reservados a Guilherme Casagrande &copy; - 2022 | <a href="https://wa.me/5541997715962?text=Ol%C3%A1%2C+vim+pelo+site" target="_blank"><i class="fa-brands fa-whatsapp white-text"></i></a> <a href="https://www.instagram.com/dev.casagrande/" target="_blank"><i class="fa-brands fa-instagram white-text"></i></a> <a href="mailto:guilhermecasagrande.dev@gmail.com" target="_blank"><i class="fa-regular fa-envelope white-text"></i></a></p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/61b248fb6c.js" crossorigin="anonymous"></script>
     <script>
         M.AutoInit();
     </script>
