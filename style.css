@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
     font-size: 62,5%;
+    --cor-azul-noite: #021226;
+    --cor-azul-escuro: #063573;
+    --cor-azul-claro: #0fc9f2;
+    --cor-azul-esverdeado: #38f2e0;
+    --cor-branco: #ffffff;
 }
 *{
     padding: 0;
@@ -21,6 +26,10 @@ body, html{
 .hidden{
     display: none;
 }
+p{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
 nav{
     width: 100%;
     margin: 0;
@@ -40,7 +49,7 @@ nav a{
 }
 nav a:hover{
     border-bottom: 2px white solid;
-    background-color: transparent !important;
+    background-color: transparent !important;    
 }
 .navbar{
     display: flex;
@@ -51,7 +60,7 @@ nav a:hover{
 header{
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #000000 68.96%, rgba(0, 0, 0, 0) 111.81%), url('../img/background_header.jpg');
+    background: linear-gradient(180deg, #021226 65.9%, rgba(0, 0, 0, 0) 166.39%), url('img/background_header.jpg');
     background-size: 100%;
     background-attachment: fixed;
     display: flex;
@@ -78,11 +87,10 @@ header .home{
     height: 100vh;
 }
 article{
-    height: 100vh;
     padding: 2%;
 }
 h1{
-    font-size: 4rem;
+    font-size: 4rem !important;
     font-weight: 700;
 }
 .input-field input:focus + label {
@@ -98,4 +106,42 @@ h1{
 .input-field textarea:focus {
     border-bottom: 1px solid #586063 !important;
     box-shadow: 0 1px 0 0 #586063 !important; 
+}
+.contato{
+    background-color: var(--cor-azul-noite);
+}
+.h2{
+    font-weight: 500;
+    font-size: 5rem !important;
+}
+footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--cor-azul-escuro);
+    font-weight: 700;
+}
+.formacao{
+    background-color: var(--cor-azul-escuro);
+}
+.formimg{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: var(--cor-azul-esverdeado);
+    justify-content: center;
+}
+.formimg img{
+    height: 105px;
+    width: 105px;
+    margin: 0;
+    
+}
+.alinha{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 500;
 }

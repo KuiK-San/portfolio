@@ -15,7 +15,11 @@
     body::-webkit-scrollbar-thumb{
         background-color: #5F210C;
         border-radius: 12px;
-    } */
+    } 
+    *{
+        user-select: none;
+    }
+    */
     </style>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -31,8 +35,8 @@
                 <div class="brand-logo center ">
                     <ul id="tabs" class="hide-on-med-and-down">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#competencias">Competências</a></li>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#formacao">Formação</a></li>
+                        <li><a href="#">Serviços</a></li>
                         <li><a href="#">Portfólio</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
@@ -43,8 +47,8 @@
     </div>
     <ul class="sidenav black" id="mobile-demo">
         <li><a class="white-text waves-effect waves-light" href="#home">Home</a></li>
-        <li><a class="white-text waves-effect waves-light" href="#competencias">Competências</a></li>
-        <li><a class="white-text waves-effect waves-light" href="#">Sobre</a></li>
+        <li><a class="white-text waves-effect waves-light" href="#formacao">Formação</a></li>
+        <li><a class="white-text waves-effect waves-light" href="#">Serviços</a></li>
         <li><a class="white-text waves-effect waves-light" href="#">Portfólio</a></li>
         <li><a class="white-text waves-effect waves-light" href="#contato">Contato</a></li>
     </ul>
@@ -58,11 +62,47 @@
             </header>
         </div>
     </div>
-    <article class="blue-grey darken-4" id="contato">
-        <div class="container " >
+    <article class="formacao" id="formacao">
+        <div class="container">
+            <div class="row">
+                <h2 class="center-align">Formação</h2>
+            </div>
+            <div class="row">
+                <div class="col l4 m4 center-align">
+                    <div class="alinha">
+                        <div class="formimg valign-wrapper"><img class="" src="img/curso_em_video.png" alt=""></div>
+                        <div class="center-align">
+                            <h3>Curso em video</h3>
+                            <p>Curso Das linguagens JavaScript E HTML5 - CSS3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 m4 center-align">
+                    <div class="alinha">
+                        <div class="formimg valign-wrapper"><img class="" src="img/senac.png" alt=""></div>
+                        <div class="center-align">
+                            <h3>Senac - PR</h3>
+                            <p>Curso Programador Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 m4 center-align">
+                    <div class="alinha">
+                        <div class="formimg valign-wrapper"><img class="" src="img/curso_em_video.png" alt=""></div>
+                        <div class="center-align">
+                            <h3>Curso em video</h3>
+                            <p>Curso Das linguagens JavaScript E HTML5 - CSS3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="contato" id="contato">
+        <div class="container" >
             
                 <div class="row">
-                    <h1 class="center-align">Contato</h1>
+                    <h2 class="center-align">Contato</h2>
                 </div>
                 <form action="email.php" method="post">
                     <div class="row">
@@ -96,7 +136,7 @@
                                   <label for="textarea2">Insira sua mensagem <span class="red-text">*</span></label>
                             </div>
                             <div class="row">
-                                <button class="waves-effect waves-light btn-flat white-text" type="submit" name="action">Enviar
+                                <button class="waves-effect waves-light btn-flat white-text col l12 s12 m12" type="submit" name="action">Enviar
                                 </button>
                             </div>
                         </div>
@@ -105,6 +145,9 @@
             
         </div>
     </article>
+    <footer>
+        <p class="center-align">Todos os direitos reservados a Guilherme Casagrande &copy; - 2022</p>
+    </footer>
     <script>
         M.AutoInit();
     </script>
