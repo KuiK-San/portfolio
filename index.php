@@ -1,3 +1,9 @@
+<?php
+if(!isset($_SESSION)){
+    session_start(); //verificar se tem seção ativa, se não starta a sessão;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- It's hiding the scrollbar. -->
     <style>
-/*     body::-webkit-scrollbar{
+    body::-webkit-scrollbar{
         width: 0px;
     }
     body::-webkit-scrollbar-track{
@@ -19,7 +25,7 @@
     *{
         user-select: none;
     }
-    */
+   
     </style>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -148,7 +154,7 @@
             <div class="row">
                 <h2 class="center-align">Contato</h2>
             </div>
-            <form action="email.php" method="post">
+            <form action="bd.php" method="post">
                 <div class="row">
                     <div class="col s12">
                         <div class="row">
@@ -194,6 +200,12 @@
     <script src="https://kit.fontawesome.com/61b248fb6c.js" crossorigin="anonymous"></script>
     <script>
         M.AutoInit();
+        <?php
+        if(isset($_SESSION['feito'])){
+            ?>M.toast({html: 'I am a toast!', classes: 'green'});<?php
+        }
+        ?>
+        
     </script>
 </body>
 </html>
